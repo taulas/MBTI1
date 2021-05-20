@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">MBTI</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account ? <u> SIGN UP</u></string>
+    <string name="fname">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="new_sign_up">New Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_fname">Enter first name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="enter_uname">Enter username</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_pass">Enter password</string>
+    <string name="pass_short">Password too short</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="mbti_test">MBTI Test</string>
+    <string name="mbti_type">MBTI Type</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="success">Success</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="question_1">I prefer to spend time with friends rather than alone.</string>
+    <string name="question_2">I rely more on intuition than on facts and plans.</string>
+    <string name="mbti_dating_app">MBTI App</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+
+
+    <string name="test_q1">1. You are totally exhausted because your week was endless and less than great. How are you going to spend your weekend?</string>
+    <string name="test_ans_q1_1">I\'ll call my friends to ask about their plans. I heard that a new restaurant opened a nice comedy is playing in the cinemas there are big discounts at the paintball club. We should all go out together.</string>
+    <string name="test_ans_q1_2">I\'ll switch on the "Don\'t disturb" mode on my phone and stay at home. I\'ll watch a new episode of my favorite TV show, do a puzzle, and take a long bath with a book.</string>
+
+
+    <string name="test_q2">2. Which of these 2 descriptions suits you more?</string>
+    <string name="test_ans_q2_1">The most important thing for me is what\'s happening here and now. I assess real situations and pay attention to details.</string>
+    <string name="test_ans_q2_2">Facts are boring. I love to dream and play over upcoming events in my mind. I rely more on intuition than information.</string>
+
+
+    <string name="test_q3">3. A competitor of your current employer is trying to entice you. You have doubts because the salary is much higher there, but the staff here is great. Moreover, the head of your department hinted that he will recommend you to the bosses when he retires. How are you going to make a decision?</string>
+    <string name="test_ans_q3_1">I\'ll learn all the available information about the competitor, ask my HR manager for advice, and draw a chart with all the pros and cons. In such cases, it\'s important to weigh up all the arguments and assess the situation with a cold mind.</string>
+    <string name="test_ans_q3_2">I\'ll listen to my feelings. I always try to follow my heart.</string>
+
+    <string name="test_q4">4. Only 2 weeks are left before your close friends\' wedding. How are the preparations going?</string>
+    <string name="test_ans_q4_1">One month ago, I chose the saxophonist who will play a medley of our school songs / collected the couple\'s photo love story / composed a poem / pressed my suit / made appointments with the stylist and makeup master. I prefer to be fully armed.</string>
+    <string name="test_ans_q4_2">Why prepare? I\'ll be having fun and enjoying myself at the party. I\'ll improvise my wedding speech. The best things happen spontaneously.</string>
+    <string name="select_option">Please select option</string>
+
+
+    <string name="estj_content">Practical and consistent, you like to have order everywhere by planning and organizing everything. But most of all, you like to convince people of your rightness and make them think the way you think. You look at life soberly and, above all, trust facts.
+        \n\nYou are open for communication, meeting new people, and spending time at parties. You never forget to take care of your close ones and can express your love very well.\n\n
+    <b>11% men, 6% women.</b>
+    </string>
+
+    <string name="entj_content">Life for you is a struggle and extreme. This is how you know yourself and others. Being risky and brave, you are easily inspired to start something new. At the same time, you assess your abilities, both strengths and weaknesses, quite adequately.\n\n
+        You feel new tendencies very well and are open to new ideas. You think positively and adore sport and everything connected to it.\n\n
+    <b>3% men, 1% women.</b>
+    </string>
+
+    <string name="esfj_content">You get along with people very well, and you are the life of any party. You are attentive, caring, and always ready to help, even if you have to sacrifice your personal interests for others.\n\n
+        Yet you are very independent in your deals and, as a rule, you get everything without any side help. You only wait for emotional support from your close ones.\n\n
+    <b>17% women, 8% men.</b>
+    </string>
+    <string name="estp_content">"Participation is more important than victory." This is not about you. You strive to reach your goals by any means, even if you have to use physical strength. You stick to an exact plan, and you can\'t stand dependence and compromises.\n\n
+        You\'re a born fighter, very active and self-organized. You can objectively evaluate even the most stressful situation and give a quick and exact response.\n\n
+    <b>6% men, 3% women.</b>
+    </string>
+
+    <string name="enfj_content">You are emotional and talkative with rich facial expressions and gesticulations. You are very empathetic to other people\'s emotions, and you can spot even the tiniest insincerity. You are very jealous and distrustful in love relationships.\n\n
+        Very often, you are ready to face upcoming events because of your ability to feel them in advance.\n\n
+    <b>3% women, 2% men.</b>
+    </string>
+    <string name="entp_content">The generator of ideas, you are always seeking to create something new. You adapt easily to nonfamiliar environments and master different methods of work easily.\n\nDue to your dislike of traditions and routine, you very often change your professional spheres and hobbies, becoming an innovator and a pioneer. What is important about you is that not only can you create new ideas but you are also able to convey them to others and make them come true.\n\n
+<b>4% men, 2% women.</b>
+    </string>
+
+    <string name="esfp_content">You can professionally determine the opportunities of your surroundings, and very often you use this skill to manipulate people. In communication with people, you primarily follow your personal interests. However, you try to impress everybody and create the image of a simple person.\n\n
+        You stand firmly in the present moment, and you don\'t like to waste time. You want quick results, disliking bureaucracy and red tape.\n\n
+    <b>10% women, 7% men.</b>
+    </string>
+
+    <string name="enfp_content">You are energetic and inquisitive, with very clear creative skills. You combine the features of both introverts and extroverts, which is why not only do you get along with people easily but you also empathize well. You are very good at advising.\n\n
+        You perceive life with all the diversity of its possibilities. You have a very rich imagination and a very high IQ. You\'re a very harmonious person, able to keep the balance even in a very quickly changing environment.\n\n
+    <b>10% women, 6% men.</b>
+    </string>
+
+    <string name="infp_content">A lyricist and dreamer, your inner harmony and self-agreement are always in first place. Most of your thinking happens deep inside of you. Nevertheless, you are able to foresee events and understand people well.\n\n
+        You like to dress up and try to look good in all circumstances. You can\'t be called thrifty, and you often lose sense of time and reality.\n\n
+        <b>5% women, 4% men.</b>
+    </string>
+
+    <string name="isfp_content">You can find joy in simple things, handling routine and monotony easily. You like to feel needed, which is why you always help other people but never interfere with their comfort zone. You can\'t stand conflicts, and you can always entertain people and make them laugh.\n\n
+        You\'re a very down-to-earth, practical, caring, tender, reliable, and faithful partner. You take this world as it is, never trying to lead and manipulate.\n\n
+    <b>10% women, 8% men.</b>
+    </string>
+
+    <string name="intp_content">An egghead and philosopher, you don\'t like too much expressiveness. You always seek calm emotions and comfort. You\'re very careful when making decisions, preferring to analyze and find connections between the past, present, and future.\n\n
+        You are very sensitive to changes, and you don\'t handle them easily. You always try to collect all of your facts, thoughts, and ideas, and that\'s why you are very often tense.\n\n
+    <b>5% men, 2% women.</b>
+    </string>
+
+    <string name="infj_content">You are perfect at sensing people and their relationships. You can easily identify moods and hidden talents, which is why people seek advice from you. However, you are very vulnerable and can\'t stand aggression and lack of love.\n\n
+        Your driving force is intuition, aimed not outside but inside. This type of person never stops learning, considering self-development to be a main priority. By getting to know yourself, you help others.\n\n
+    <b>2% women, 1% men.</b>
+    </string>
+
+    <string name="intj_content">You have the richest inner world from where you get your incredible ideas. You strive for excellence and want to improve everything and everybody.\n\n
+    However, you have some difficulties in relationships with people, very often distancing yourself intentionally to demonstrate your independence. You can set priorities and trust your intuition.\n\n
+    <b>3% men, 1% women.</b></string>
+
+    <string name="isfj_content">You can\'t stand falseness and insincerity in relationships. You distinguish "strangers" and keep them at a distance right away. For the people "inside your circle," you do anything and never ask for anything in return.\n\n
+You are observant and very careful with words and deeds. Kind and caring, you see your main goal as helping people and making them happier.\n\n
+<b>19% women, 8% men.</b></string>
+
+    <string name="istp_content">The handyman, as a rule, has a technical mindset and likes to make things by hand. You don\'t hurry with taking decisions and think that it is better twice measured than once wrong. However, you always meet deadlines and you are very punctual by nature. You perceive this world through feelings, and your opinion of things happening around you is very objective and specific. By nature, you are communicative, but you will refuse communication once you feel insincerity.\n\n
+    <b>9% men, 2% women.</b>
+    </string>
+
+    <string name="istj_content">Thoughtful, pensive, responsible. You are trustworthy, but you never take things as they are, always analyzing the incoming information. You are not interested in long term communication and prefer official communication only during companionship. You are aimed at the final result.\n\n
+You like strictness and order, and very often you are pedantic. You don\'t live in your dreams, only in the "here and now."\n\n
+    <b>15% men, 7% women.</b>
+    </string>
+    <string name="basic_information">Basic Information</string>
+    <string name="manager">MANAGER</string>
+    <string name="commander">COMMANDER</string>
+    <string name="teacher">TEACHER</string>
+    <string name="marshal">MARSHAL</string>
+    <string name="mentor">MENTOR</string>
+    <string name="inventor">INVENTOR</string>
+    <string name="politician">POLITICIAN</string>
+    <string name="champion">CHAMPION</string>
+    <string name="healer">HEALER</string>
+    <string name="composer">COMPOSER</string>
+    <string name="architect">ARCHITECT</string>
+    <string name="advisor">ADVISOR</string>
+    <string name="inspirer">INSPIRER</string>
+    <string name="protector">PROTECTOR</string>
+    <string name="handyman">HANDYMAN</string>
+    <string name="inspector">INSPECTOR</string>
+</resources>

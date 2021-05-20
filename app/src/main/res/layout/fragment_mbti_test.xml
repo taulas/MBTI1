@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.ui.mbtitest.MbtiTestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.mbti.app.utils.CustomFont
+                    android:id="@+id/tv_question_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/grey"></View>
+
+                <RadioGroup
+                    android:id="@+id/rg_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_test_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:drawableTint="@color/black"
+                        android:padding="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_test_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:drawableTint="@color/black"
+                        android:padding="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold"></RadioButton>
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mbti.app.utils.CustomFont
+                android:id="@+id/tv_previous"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pass"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"></com.mbti.app.utils.CustomFont>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pass"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/rounded_cornerbackground_btn"
+                android:elevation="@dimen/dp_15"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_personality"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.mbti.app.utils.CustomFont
+            android:id="@+id/tv_personality_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <com.mbti.app.utils.CustomFont
+            android:id="@+id/tv_personality_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium"></com.mbti.app.utils.CustomFont>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_pass"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_15"
+            android:background="@drawable/rounded_cornerbackground_btn"
+            android:elevation="@dimen/dp_15"
+            android:fontFamily="@font/segoe_ui_regular"
+            android:text="Okay"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone"></Button>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.mbti.app.ui.home.ui.profile.ProfileViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.ui.home.HomeFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/ic_boy"></ImageView>
+
+
+                    <com.mbti.app.utils.CustomFont
+                        android:id="@+id/tv_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_profile_icon"
+                        android:gravity="center"
+                        android:letterSpacing="0.1"
+                        android:padding="@dimen/dp_5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small"
+                        android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+                    <com.mbti.app.utils.CustomFont
+                        android:id="@+id/tv_basic_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_profile_icon"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:text="@string/basic_information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small"
+                        android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+                    <EditText
+                        android:id="@+id/edt_basic_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:background="@drawable/rounded_box"
+                        android:gravity="top"
+                        android:padding="@dimen/dp_10"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_clr"></EditText>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttxt_height"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@drawable/rounded_corner_background"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/dp_20"
+
+                            android:paddingRight="@dimen/dp_20">
+
+                            <EditText
+                                android:id="@+id/edt_fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:background="@null"
+                                android:fontFamily="@font/segoe_ui_regular"
+                                android:gravity="center|left"
+                                android:hint="@string/fname"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@drawable/cursor_clr"
+                                android:textSize="@dimen/font_small"></EditText>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttxt_height"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@drawable/rounded_corner_background"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/dp_20"
+                            android:paddingRight="@dimen/dp_20">
+
+
+                            <EditText
+                                android:id="@+id/edt_lname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:background="@null"
+                                android:fontFamily="@font/segoe_ui_regular"
+                                android:gravity="center|left"
+                                android:hint="@string/last_name"
+                                android:singleLine="true"
+
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@drawable/cursor_clr"
+                                android:textSize="@dimen/font_small"></EditText>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttxt_height"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@drawable/rounded_corner_background"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/dp_20"
+                            android:paddingRight="@dimen/dp_20">
+
+
+                            <EditText
+                                android:id="@+id/edt_uname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:background="@null"
+                                android:fontFamily="@font/segoe_ui_regular"
+                                android:gravity="center|left"
+                                android:hint="@string/username"
+                                android:singleLine="true"
+
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@drawable/cursor_clr"
+                                android:textSize="@dimen/font_small"></EditText>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttxt_height"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@drawable/rounded_corner_background"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/dp_20"
+                            android:paddingRight="@dimen/dp_20">
+
+                            <EditText
+                                android:id="@+id/edt_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:background="@null"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="@font/segoe_ui_regular"
+                                android:gravity="center|left"
+                                android:hint="@string/email"
+                                android:singleLine="true"
+
+                                android:textColor="#ddd"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textCursorDrawable="@drawable/cursor_clr"
+                                android:textSize="@dimen/font_small"></EditText>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.mbti.app.utils.CustomFont
+                        android:id="@+id/tv_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_full_name"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small"
+                        android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+
+                    <com.mbti.app.utils.CustomFont
+                        android:id="@+id/tv_type_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_full_name"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+
+                        android:text=""
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_small"></com.mbti.app.utils.CustomFont>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/rounded_cornerbackground_btn"
+                android:elevation="@dimen/dp_15"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"></Button>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

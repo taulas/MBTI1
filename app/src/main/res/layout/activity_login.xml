@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.mbti.app.ui.login.LoginViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:gravity="center"
+        tools:context=".ui.login.LoginActivity">
+
+
+        <com.mbti.app.utils.CustomFont
+            android:id="@+id/tv_head_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+
+            android:padding="@dimen/dp_20"
+            android:text="@string/mbti_dating_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_head_1"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <RelativeLayout
+                android:id="@+id/rl_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edttxt_height"
+                android:layout_margin="@dimen/dp_20">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.2"
+                    android:background="@drawable/rounded_corner_background"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/email_icon"
+                        android:tint="@color/black"></ImageView>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:alpha="0.8"
+                        android:background="@color/black"></View>
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:background="@null"
+                        android:fontFamily="@font/segoe_ui_regular"
+                        android:gravity="center|left"
+                        android:hint="@string/email"
+                        android:singleLine="true"
+                        android:text="@={model.email}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textCursorDrawable="@drawable/cursor_clr"
+                        android:textSize="@dimen/font_small"></EditText>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edttxt_height"
+                android:layout_below="@+id/rl_email"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.2"
+                    android:background="@drawable/rounded_corner_background"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/password_icon"
+                        android:tint="@color/black"></ImageView>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:alpha="0.8"
+                        android:background="@color/black"></View>
+
+                    <EditText
+                        android:id="@+id/edt_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:background="@null"
+                        android:fontFamily="@font/segoe_ui_regular"
+                        android:gravity="center|left"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:text="@={model.password}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textCursorDrawable="@drawable/cursor_clr"
+                        android:textSize="@dimen/font_small"></EditText>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/rounded_cornerbackground_btn"
+                android:elevation="@dimen/dp_15"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:gravity="center"
+                android:onClick="@{model.doLogin}"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"></Button>
+
+            <com.mbti.app.utils.CustomFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_30"
+                android:onClick="@{model.redirectToSignUp}"
+                android:text="@string/don_t_have_account_sign_up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold"></com.mbti.app.utils.CustomFont>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
