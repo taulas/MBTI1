@@ -1,0 +1,32 @@
+Motivation behind this app:
+
+My motivation on this app is based on, that last spring one oh mine closest friend was constantly talking about MBTI personality types and he was able to pull mine
+interest for it. He has constantly teaching me how to analyze people putting them into different personalities, how different personalities work, and the
+compatibility with other personality types. One day while having a discussion on MBTI we created an idea that there should be a dating app that would
+match people using their personality compatibilities. And the fourth semester gave me an opportunity for accomplishing it as I need to develop my personal app.
+
+Description about the app:
+
+The Meyers-Briggs Type Indicator (MBTI) is a test that assigns for person his own personality type, which gives helpful information about how he functions,
+makes decisions, and compatibility with other personalities. MBTI dating app helps a person to find their compatible partner based on MBTI personality compatibility.
+A good point of this app is that, is that is not required to know MBTI, as this application has its own MBTI test which after completion assigns personality with
+detailed descriptions and suggested personalities to date.
+
+I was not able to fully implement this app so I changed it to MBTI test which is able to show to user what he was personality afther completing a test and he is able to have
+custom profile.
+
+User stories:
+
+The user must create account and later use the credentials to login. (Delivered)
+The user must select preferred personalities for receiving suggested profiles. (Not delivered)
+The user must enter his MBTI personality. (Not delivered)
+The user must accept or decline the suggested profiles. (Not delivered)
+The user should do own personalized profile with pictures and descriptions. (Partialy delivered)
+The user should do MBTI personality test to get own personality type. (Delivered)
+The user should check personality compatibility table which explains how user is compatible with other personalities. (Not delivered)
+The user could text other users who is matched to the user. (Not delivered)
+The user won’t send pictures to chat. (Not delivered)
+
+Link to presentation:
+
+https://youtu.be/FDsZmJ5L-C4
